@@ -26,4 +26,8 @@ for i in `find . -maxdepth 2 -iname 'auto_setup.sh'`; do
   bash $i
 done
 
+echo 'run post-up'
+chmod +x hooks/post-up.sh
+source ./hooks/post-up.sh
+
 popd

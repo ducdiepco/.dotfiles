@@ -1,3 +1,5 @@
+" Leader
+let mapleader = " "
 "These are my preferences for my vim files.
 
 "This positions the window in the top-left corner of the screen
@@ -172,3 +174,7 @@ set paste " Disable auto indenting. Annoying when pasting. Although may want to 
 
 " Colorschemes are downloaded to: ~/.vim/colors
 colorscheme PerfectDark
+
+if filereadable(expand("~/.vimrc.bundles"))
+  source ~/.vimrc.bundles
+endif
