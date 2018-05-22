@@ -59,6 +59,7 @@
     lintPreviewTabs: false
   "linter-rubocop": {}
   "linter-ui-default":
+    panelHeight: 384
     showProviderName: true
   "toggle-quotes": {}
   welcome:

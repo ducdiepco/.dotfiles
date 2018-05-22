@@ -33,9 +33,26 @@
 
 'atom-workspace':
   'cmd-shift-i': 'fuzzy-finder:toggle-git-status-finder'
-  'cmd-shift-b': 'fuzzy-finder:toggle-git-status-finder'
+  'cmd-shift-i': 'fuzzy-finder:toggle-git-status-finder'
 
 'atom-text-editor':
   # Ensure that Copy does nothing when nothing is selected.
   'cmd-c': 'editor:copy-selection'    # mac
   'ctrl-c': 'editor:copy-selection'   # linux and windows
+
+'atom-text-editor.vim-mode-plus:not(.insert-mode)':
+  '-': 'choose-pane:start'
+  'm m': 'choose-pane:focus-last-focused'
+
+'.markdown-preview':
+  '-': 'choose-pane:start'
+  'm m': 'choose-pane:focus-last-focused'
+
+# For tree-view
+'.tree-view':
+  '-': 'choose-pane:start'
+  'm m': 'choose-pane:focus-last-focused'
+
+# Map '-', so that I can focus last-focused element by typing `-` twice.
+'atom-text-editor#choose-pane-editor':
+  '-': 'choose-pane:last-focused'
